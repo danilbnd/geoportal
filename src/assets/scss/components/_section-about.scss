@@ -1,0 +1,187 @@
+.db-section-about {
+  padding: 135px 0;
+  @media screen and (max-width: 770px) {
+    padding: 75px 0;
+  }
+  @media screen and (max-width: 490px) {
+    padding: 55px 0;
+  }
+ &__block-text {
+   @media screen and (max-width: 1020px) {
+     width: 100%;
+   }
+ }
+  &__subtitle {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: $light-gray;
+    margin: 63px 0 -5px;
+    @media screen and (max-width: 770px) {
+      font-size: 20px;
+    }
+
+  }
+
+  &__title {
+    color: $black;
+    font-family: $second-font-family;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: -15px;
+    @media screen and (max-width: 1020px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 770px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 26px;
+    }
+  }
+
+  &__title-blue {
+    font-family: $second-font-family;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 1.5px;
+    color: $dark-blue;
+    margin-bottom: 33px;
+    @media screen and (max-width: 1020px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 770px) {
+      font-size: 36px;
+      margin-bottom: 13px;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    color: #000;
+    line-height: 25px;
+
+    @media screen and (max-width: 770px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 14px;
+    }
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item-img {
+    background: $light-gray url("../img/house.svg") no-repeat 22%;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: 1199px) {
+      width: 47%;
+    }
+    @media screen and (max-width: 1020px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 770px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 490px) {
+      width: 100%;
+    }
+
+    &:nth-child(1) {
+      margin-bottom: 30px;
+
+    }
+
+    &:nth-child(2) {
+      margin-left: 30px;
+      margin-bottom: 30px;
+      @media screen and (max-width: 1020px) {
+        margin-left: 0;
+      }
+      @media screen and (max-width: 770px) {
+        margin-left: 0;
+      }
+      @media screen and (max-width: 490px) {
+        margin-left: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-right: 30px;
+      @media screen and (max-width: 1020px) {
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
+      @media screen and (max-width: 770px) {
+        margin-right: 0px;
+        margin-bottom: 30px;
+
+      }
+      @media screen and (max-width: 490px) {
+        margin-right: 0px;
+      }
+    }
+
+    & img {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      background: $dark-blue url("../img/house1.svg") no-repeat 22%;
+      color: $white;
+    }
+
+    &:hover svg,
+    &:hover span {
+      color: $white;
+      fill: $white;
+      //stroke: $white;
+
+    }
+
+  }
+}
+
+.db-span {
+  margin-right: 60px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__number {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    display: block;
+  }
+}
+

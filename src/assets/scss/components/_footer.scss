@@ -1,0 +1,22 @@
+.db-footer {
+  padding: 28px 0 33px;
+  color: #000;
+
+  &__block {
+    @media screen and (max-width: 370px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__copyride {
+    font-size: 14px;
+    line-height: 138%;
+  }
+
+  &__firm {
+    font-size: 14px;
+    line-height: 138%;
+  }
+}
+

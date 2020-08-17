@@ -1,0 +1,175 @@
+.db-offer {
+  background: url(../img/bg-first-section.jpg) no-repeat 50%;
+  background-size: cover;
+  padding: 191px 0 195px;
+  color: $white;
+  position: relative;
+
+
+  &--img2 {
+    background: url(../img/jake-allison.jpg) no-repeat 50%;
+    background-size: cover;
+  }
+
+  &--img3 {
+    background: url(../img/daniel-james.jpg) no-repeat 50%;
+    background-size: cover;
+  }
+
+  &--img4 {
+    background: url(../img/sandra.jpg) no-repeat 50%;
+    background-size: cover;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-family: $second-font-family;
+    white-space: pre-line;
+    @media screen and (max-width: 1020px){
+      font-size: 40px;
+    }
+    @media screen and (max-width: 770px){
+      font-size: 30px;
+      white-space: normal;
+    }
+    @media screen and (max-width: 470px){
+      font-size: 26px;
+      white-space: normal;
+    }
+  }
+
+  &__sub-title {
+    margin-bottom: 70px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    line-height: 1.9;
+    white-space: pre-line;
+    @media screen and (max-width: 1020px){
+      font-size: 20px;
+    }
+    @media screen and (max-width: 770px){
+      font-size: 16px;
+      white-space: normal;
+
+    }
+    @media screen and (max-width: 470px){
+      font-size: 14px;
+      white-space: normal;
+
+    }
+  }
+
+  &__btn {
+    width: 168px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background: $dark-blue;
+    position: relative;
+
+    &:focus,
+    &:hover {
+      color: inherit;
+      background: rgba($dark-blue, .7);
+      text-decoration: none;
+      transition: .7s;
+      border: none;
+      outline: none;
+    }
+    @media screen and (max-width: 770px){
+      width: 128px;
+      height: 44px;
+      font-size: 16px;
+    }
+  }
+}
+
+.db-best-slider__arrows {
+  position: absolute;
+  bottom: 9%;
+  right: 13%;
+  display: flex;
+}
+
+.db-slider-btn {
+  width: 66px;
+  height: 70px;
+  background: rgba(255, 245, 215, .2);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover, &:focus {
+    outline: none;
+    background: rgba($white, 0.4);
+    transition: .7s;
+  }
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  &.slick-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 99px;
+  left: 14.7%;
+  @media screen and (max-width: 1020px){
+    left: 40%;
+  }
+  @media screen and (max-width: 770px){
+    left: 35%;
+  }
+  @media screen and (max-width: 490px){
+    left: 23%;
+  }
+  @media screen and (max-width: 320px){
+    left: 15%;
+  }
+
+  .slick-active {
+    button {
+      background: $white;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      opacity: 1;
+
+    }
+  }
+
+  button {
+    width: 10px;
+    height: 11px;
+    display: block;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: $white;
+    opacity: .3;
+    font-size: 0;
+    margin-left: 40px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

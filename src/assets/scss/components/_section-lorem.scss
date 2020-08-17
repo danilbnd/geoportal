@@ -1,0 +1,123 @@
+.db-section-lorem-p {
+  padding-bottom: 134px;
+}
+
+.db-section-lorem {
+  background: url("../img/bg-lorem.jpg") no-repeat 50%;
+  padding: 66px 0 80px;
+  @media screen and (max-width: 770px) {
+    padding: 50px 0 50px;
+  }
+  @media screen and (max-width: 490px) {
+    padding: 50px 0 50px;
+  }
+
+  &__block-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    width: 225px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $light-gray;
+    color: $black;
+    font-size: 16px;
+    margin-bottom: 51px;
+    border: none;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 21px;
+    }
+    @media screen and (max-width: 1020px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 770px) {
+      width: 40%;
+    }
+
+    &:first-child {
+      margin-right: 25px;
+    }
+
+    &:hover, &:focus {
+      background: $dark-blue;
+      color: $white;
+      text-decoration: none;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__title {
+    font-family: $second-font-family;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 1.6px;
+    margin-bottom: 63px;
+    text-align: center;
+    color: $white;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 21px;
+    }
+    @media screen and (max-width: 920px) {
+      font-size: 38px;
+      margin-bottom: 21px;
+    }
+    @media screen and (max-width: 770px) {
+      font-size: 38px;
+      margin-bottom: 21px;
+    }
+    @media screen and (max-width: 490px) {
+      margin-bottom: 21px;
+      font-size: 28px;
+    }
+  }
+
+  &__image {
+    width: 274px;
+    height: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 139px 0 196px;
+    @media screen and (max-width: 1199px) {
+      margin: 0 70px 0 150px;
+
+    }
+    @media screen and (max-width: 1020px) {
+      margin: 0 50px 0 150px;
+      max-width: 75%;
+    }
+    @media screen and (max-width: 920px) {
+      margin: 0 auto 20px;
+      max-width: 30%;
+      height: 200px;
+    }
+    @media screen and (max-width: 770px) {
+      margin: 0 auto 20px;
+      max-width: 30%;
+      height: 150px;
+    }
+    @media screen and (max-width: 490px) {
+      margin: 0 auto 20px;
+      width: 30%;
+      height: 150px;
+    }
+  }
+
+  &__text {
+    color: $white;
+    margin-bottom: 0;
+    @media screen and (max-width: 770px) {
+      margin: 0 30px 20px;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 920px) {
+      margin: 0 20px;
+    }
+  }
+}
+

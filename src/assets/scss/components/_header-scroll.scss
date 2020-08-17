@@ -1,0 +1,68 @@
+.bg-header__scroll {
+  background: $white;
+  animation: 3s forwards;
+  animation-name: fadeIn;
+  width: 100%;
+  height: 15%;
+}
+
+  .bg-header:hover {
+    background-color: black;
+  }
+
+  .comeOn {
+    animation-name: comeOn;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+      background: $white;
+
+      @media screen and (max-width: 500px){
+        background: rgba($white, .1);
+      }
+    }
+  }
+
+  @keyframes comeOn {
+    0% {
+      visibility: visible;
+      opacity: 1;
+      background: $white;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+      background: $white;
+    }
+  }
+
+
+.db-navbar__logo-scroll {
+  & svg {
+    fill: $dark-blue;
+  }
+  color: $dark-blue !important;
+}
+.db-navbar__items-scroll {
+  & a {
+    color: $black !important;
+
+    &:hover {
+      color: $white;
+      opacity: .7;
+    }
+
+    & svg {
+      margin-right: 11px;
+      fill: $dark-blue;
+    }
+  }
+}
+

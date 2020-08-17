@@ -1,0 +1,146 @@
+.db-section-form {
+  background: url('../img/bg-form.jpg') no-repeat 50%;
+  background-size: cover;
+  padding: 74px 0 107px;
+  color: $white;
+
+  &__title {
+    font-family: $second-font-family;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 144.55%;
+    letter-spacing: 2px;
+    text-align: center;
+
+    @media screen and (max-width: 770px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 370px) {
+      font-size: 28px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 138%;
+    text-align: center;
+    margin-bottom: 76px;
+
+    @media screen and (max-width: 770px) {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__nav {
+    list-style: none;
+    margin: 10px 0 0 70px;
+  }
+
+  &__nav-item {
+    margin-bottom: 36px;
+  }
+
+  &__nav-link {
+    color: $white;
+    line-height: 132%;
+
+    &:hover {
+      color: rgba($white, .7);
+      text-decoration: none;
+    }
+
+    & img {
+      margin-right: 32px;
+    }
+  }
+}
+
+
+.db-form {
+  position: relative;
+
+  &__name {
+    margin-right: 31px;
+    width: 100%;
+  }
+
+  &__surname {
+    width: 100%;
+  }
+
+  &__button {
+    width: 158px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $dark-blue;
+    color: $white;
+    border: none;
+    position: absolute;
+    right: 0;
+
+    &:focus,
+    &:hover {
+      background: rgba($dark-blue, .7);
+      color: $white;
+      transition: .4s;
+      border: none;
+      outline: none;
+    }
+
+    @media screen and (max-width: 770px) {
+      right: 50%;
+      transform: translateX(50%);
+    }
+    @media screen and (max-width: 490px) {
+      right: 50%;
+      transform: translateX(50%);
+
+    }
+  }
+
+  &__textarea {
+    & textarea {
+      margin-bottom: 31px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $white;
+      border-radius: 0;
+    }
+  }
+}
+
+label {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+  background-color 0.3s ease-in, opacity 0.3s ease-in, box-shadow 0.2s ease-in;
+  padding: 0;
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $white;
+  margin-bottom: -5px;
+
+  &:focus {
+    box-shadow: 0 0 0 0 #555;
+    outline: none;
+    background: transparent;
+  }
+}

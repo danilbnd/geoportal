@@ -1,0 +1,122 @@
+.bg-header {
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 0;
+  z-index: 1;
+  transition: height 0.3s;
+}
+
+.db-navbar {
+  &__logo {
+    font-size: 36px !important;
+    font-weight: 800;
+    color: $white;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1020px) {
+      font-size: 30px !important;
+    }
+
+    & svg {
+      margin-right: 11px;
+      fill: $white;
+      @media screen and (max-width: 1020px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__items {
+    & a {
+      color: $white !important;
+
+      &:hover {
+        color: $white;
+        opacity: .7;
+      }
+
+      & svg {
+        margin-right: 11px;
+        fill: $white;
+      }
+    }
+  }
+
+  &__items-one {
+    font-size: 13px;
+
+    & a {
+      margin-left: 40px;
+
+      & img {
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+
+  &__items-two {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    & a {
+      margin-left: 64px;
+    }
+  }
+
+  .navbar-toggler-icon,
+  .navbar-toggler {
+    outline: none;
+    z-index: 20;
+
+
+
+    &:hover {
+      outline: none;
+    }
+
+  }
+  .nav-item {
+    @media screen and (max-width: 770px) {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(#000, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.4s;
+    transition-property: transform, opacity, visibility;
+  }
+}
