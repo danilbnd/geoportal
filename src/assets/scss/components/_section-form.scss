@@ -115,6 +115,7 @@
       border: none;
       border-bottom: 1px solid $white;
       border-radius: 0;
+
       &:focus {
         box-shadow: 0 0 0 0 #555;
         outline: none;
@@ -148,9 +149,11 @@ input[type="tel"] {
     outline: none;
     background: transparent;
   }
+
   &:focus:invalid {
     border-bottom: 1px solid darkred;
   }
+
   &:focus:valid {
     border-bottom: 1px solid green;
   }
