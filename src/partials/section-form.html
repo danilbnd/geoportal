@@ -6,25 +6,25 @@
             <ul class="db-section-form__nav  col-md-4 col-lg-4">
                 <li class="db-section-form__nav-item">
                     <a class="db-section-form__nav-link" href="#">
-                        <img src="../assets/img/location-x2.svg" alt="location">
+                        <img src="./assets/img/location-x2.svg" alt="location">
                         Київ
                     </a>
                 </li>
                 <li class="db-section-form__nav-item">
                     <a class="db-section-form__nav-link" href="#">
-                        <img src="../assets/img/clock-x2.svg" alt="clock">
+                        <img src="./assets/img/clock-x2.svg" alt="clock">
                         Пн-Пт 9:00-18:00
                     </a>
                 </li>
                 <li class="db-section-form__nav-item">
-                    <a class="db-section-form__nav-link" href="tel: +044 222-33-44">
-                        <img src="../assets/img/phone-x2.svg" alt="phone">
+                    <a class="db-section-form__nav-link" href="tel:+0442223344">
+                        <img src="./assets/img/phone-x2.svg" alt="phone">
                         +044 222-33-44
                     </a>
                 </li>
                 <li class="db-section-form__nav-item">
-                    <a class="db-section-form__nav-link" href="mailto: order@test.ua">
-                        <img src="../assets/img/mail-x2.svg" alt="mail">
+                    <a class="db-section-form__nav-link" href="mailto:order@test.ua">
+                        <img src="./assets/img/mail-x2.svg" alt="mail">
                         order@test.ua
                     </a>
                 </li>
@@ -33,17 +33,19 @@
                 <div class="form-group d-flex col-sm-12 col-md-12 col-lg-12">
                     <div class="form-group db-form__name">
                         <label for="formName">Им`я</label>
-                        <input class="form-control " type="text" placeholder="Іван" id="formName">
+                        <input class="form-control " type="text" placeholder="Іван" id="formName" required>
                     </div>
                     <div class="form-group db-form__surname">
                         <label for="formName">Прізвище</label>
-                        <input class="form-control" type="text" placeholder="Іванов" id="formSurname">
+                        <input class="form-control" type="text" placeholder="Іванов" id="formSurname" required>
                     </div>
                 </div>
                 <div class="form-group db-form col-sm-12 col-md-12 col-lg-12">
                     <label for="formTel">Контактний телефон</label>
                     <input class="form-control" id="formTel" type="tel"
-                           placeholder="380111111111">
+                           placeholder="380111111111" required
+                           pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                           minlength="13" maxlength="13">
                 </div>
                 <div class="form-group db-form__textarea col-sm-12 col-md-12 col-lg-12">
                     <label for="formTextarea">Повідомлення</label>

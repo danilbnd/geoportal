@@ -51,7 +51,7 @@ buttonLorem2.addEventListener('click', function () {
 });
 buttonLorem1.addEventListener('click', function () {
     title.innerHTML = 'Lorem Ipsum 1';
-    text.innerHTML = `Lorem Ipsum - це текст-риба, що використовується в друкарстві та дизайні. Lorem Ipsum є,
+    text.innerHTML = `Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є,
     фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та
     склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й
     прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в
